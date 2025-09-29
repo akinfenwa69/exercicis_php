@@ -14,7 +14,7 @@ $suma = $edat + $nota_float;
 echo "Suma edat i nota: " . $suma;
 
 // Mostra totes les variables amb missatge
-echo "<div>
+echo "\n<div>
         <p>Nom: $nom</p>
         <p>Edat: $edat</p>
         <p>Nota: $nota_float</p>
@@ -23,9 +23,9 @@ echo "<div>
 
 // Crear condició
 if ($aprovat) {
-    echo "L'alumne ha aprovat";
+    echo "\nL'alumne ha aprovat";
 } else {
-    echo "L'alumne ha suspès";
+    echo "\nL'alumne ha suspès";
 }
 
 // Conversions addisionals
