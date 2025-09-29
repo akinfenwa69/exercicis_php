@@ -20,3 +20,11 @@
 - [x] He mostrat els resultats dins d’HTML amb `echo`.
 - [x] He validat el correu electrònic amb `filter_var()`.
 - [x] He presentat els resultats en una llista HTML (`<ul><li>...</li></ul>`).
+
+## Exercici 3
+
+- [x] Declarar arrays indexats i arrays associatius multidimensionals.
+- [x] Recórrer arrays amb foreach.
+- [x] Fer operacions amb variables (càlcul de mitjana).
+- [x] Utilitzar condicionals per classificar dades (if / elseif / else).
+- [x] Mostrar dades en HTML (taules i llistes).
