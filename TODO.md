@@ -37,3 +37,13 @@
 - [x] Fer càlculs amb valors d’un array (`preu * quantitat`).
 - [x] Retornar resultats en un array des d’una funció.
 - [x] Mostrar dades en format HTML (taula).
+
+## Exercici 5
+
+- [ ] El formulari envia les dades amb `POST`.
+- [x] He fet servir if/else per comprovar si l’usuari és major d’edat.
+- [x] He creat una funció `esMajorEdat()` i l’he utilitzat.
+- [x] He generat una taula de multiplicar amb un bucle `for`.
+- [x] He generat un compte enrere amb un bucle `while`.
+- [x] He creat un array amb tres notes i les he mostrat amb `foreach`.
+- [x] He creat una funció `mitjana()` i l’he utilitzada per mostrar el resultat.
