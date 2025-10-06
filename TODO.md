@@ -28,3 +28,12 @@
 - [x] Fer operacions amb variables (càlcul de mitjana).
 - [x] Utilitzar condicionals per classificar dades (if / elseif / else).
 - [x] Mostrar dades en HTML (taules i llistes).
+  
+## Exercici 4
+
+- [x] Declarar arrays associatius.
+- [x] Crear i utilitzar funcions en PHP.
+- [x] Passar arrays com a paràmetres a una funció.
+- [x] Fer càlculs amb valors d’un array (`preu * quantitat`).
+- [x] Retornar resultats en un array des d’una funció.
+- [x] Mostrar dades en format HTML (taula).
