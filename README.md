@@ -17,4 +17,4 @@ A part, les funcions també han tingut presencia, juntament amb una miniaplicaci
 
 Aquesta és una imatge d'exemple de la miniaplicació.
 
-![image]('./assets/images/image.png')
+![image](assets/images/image.png)
