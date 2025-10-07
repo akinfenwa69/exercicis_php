@@ -40,7 +40,7 @@
 
 ## Exercici 5
 
-- [ ] El formulari envia les dades amb `POST`.
+- [x] El formulari envia les dades amb `POST`.
 - [x] He fet servir if/else per comprovar si l’usuari és major d’edat.
 - [x] He creat una funció `esMajorEdat()` i l’he utilitzat.
 - [x] He generat una taula de multiplicar amb un bucle `for`.

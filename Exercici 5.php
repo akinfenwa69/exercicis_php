@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 
+
 <body>
     <!-- 1. Formulari HTML -->
-    <form action="./Exercici 5.php" method="post">
+    <form action="" method="post">
         <label for="name">Nom</label>
         <input type="text" name="name" id="name">
         <label for="age">Edat</label>
@@ -19,16 +21,19 @@
         <input type="submit" value="Enviar">
     </form>
 
+
     <?php
     if ($_SERVER['REQUEST_METHOD'] === "POST") {
-        $name = $_POST("name");
+        $name = $_POST["name"];
         $age = $_POST["age"];
         $mult = $_POST["mult"];
 
+
         if (!empty($name) && !empty($age) && !empty($mult)) {
-            
+
             // Mostrar missatge amb nom i l'edat
-            echo "Hola " . $name . ", tens " . $age . " anys.\n";
+            echo "<p>Hola " . $name . ", tens " . $age . " anys.</p>";
+
 
             // Major d'edat?
             function esMajorEdat($age)
@@ -39,31 +44,40 @@
                 return false;
             }
             ;
-            echo esMajorEdat($age) ? "Ets major d'edat" : "No ets major d'edat";
+            echo "<p>" . esMajorEdat($age) ? "Ets major d'edat" : "No ets major d'edat" . "</p>";
+
 
             // Mostrar taula multiplicar
-            echo "\n\nTaula del " . $mult . ":\n";
+            echo "<br><p>Taula del " . $mult . ":</p>";
+            echo "<ul>";
             for ($i = 1; $i < 11; $i++) {
-                echo $mult . " * " . $i . " = " . $mult * $i . "\n";
+                echo "<li>" . $mult . " * " . $i . " = " . $mult * $i . "</li>";
             }
             ;
+            echo "</ul>";
+
 
             // Mostrar compte enrere
-            echo "\nCompte enrere:\n";
+            echo "<br><p>Compte enrere:</p>";
             $compte = $mult;
+            echo "<ul>";
             while ($compte > -1) {
-                echo $compte . ($compte != 0 ? ", " : null);
+                echo "<li>" . $compte . "</li>";
                 $compte--;
             }
             ;
+            echo "</ul>";
+
 
             // Crear array amb tres notes
             $array = [6, 7.5, 8];
-            echo "\n\nLes notes són: ";
+            echo "<br><p>Les notes són: ";
             foreach ($array as $key => $value) {
                 echo $value . ($key != count($array) - 1 ? ", " : null);
             }
             ;
+            echo "</p>";
+
 
             // Afegir funció mitjana($notes)
             function mitjana($array)
@@ -75,12 +89,13 @@
                 return $mitjana / count($array);
             }
             ;
-            echo "\nLa mitjana de les notes és: " . number_format(mitjana($array), 2) . "\n";
+            echo "<p>La mitjana de les notes és: " . number_format(mitjana($array), 2) . "</p>";
         } else {
             echo "Si us plau, omple tots els camps.";
         }
     }
     ?>
 </body>
+
 
 </html>
