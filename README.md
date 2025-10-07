@@ -1,5 +1,7 @@
 # EXERCICIS PHP
 
+[GitHub](https://github.com/akinfenwa69/exercicis_php/tree/main)
+
 ## Miniaplicació
 
 A l'exercici 5.1 hi ha dos miniaplicacions:
