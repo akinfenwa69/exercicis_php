@@ -1,23 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Afegir | Exercici 3</title>
-</head>
-
-<body>
-    <form action="afegir.php" method="post" style="display: flex; flex-direction: column; gap: 4px; width: 300px;">
-        <label for="nom">Nom</label>
-        <input type="text" name="nom">
-        <label for="email">E-mail</label>
-        <input type="mail" name="email">
-        <label for="edat">Edat</label>
-        <input type="number" name="edat">
-        <button type="submit">Crear</button>
-    </form>
-
     <?php
     require "functions.php";
 
@@ -36,6 +16,28 @@
         exit;
     }
     ?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afegir | Exercici 3</title>
+</head>
+
+<body>
+    
+    <form action="afegir.php" method="post" style="display: flex; flex-direction: column; gap: 4px; width: 300px;">
+        <label for="nom">Nom</label>
+        <input type="text" name="nom">
+        <label for="email">E-mail</label>
+        <input type="mail" name="email">
+        <label for="edat">Edat</label>
+        <input type="number" name="edat">
+        <button type="submit">Crear</button>
+    </form>
+
 </body>
 
 </html>
