@@ -10,10 +10,6 @@
 
 ## Estructura MVC
 
-El MVC (Model - Vista - Controlador) és ...
-
-Aquesta és l'estructura utilitzada
-
 ```
 📦mvc-videojocs
  ┣ 📂config
@@ -34,16 +30,16 @@ Aquesta és l'estructura utilitzada
 
 ### CREATE
 
-.
+![image](./assets/images/Captura de pantalla_2025-10-30_16-30-49.png)
 
 ### READ
 
-.
+![image](./assets/images/Captura de pantalla_2025-10-30_16-29-29.png)
 
 ### UPDATE
 
-.
+![image](./assets/images/Captura de pantalla_2025-10-30_16-31-03.png)
 
 ### DELETE
 
-.
+![image](./assets/images/Captura de pantalla_2025-10-30_16-31-52.png)
