@@ -30,16 +30,16 @@
 
 ### CREATE
 
-![image](./assets/images/Captura de pantalla_2025-10-30_16-30-49.png)
+<img src="assets/images/Captura de pantalla_2025-10-30_16-30-49.png"/>
 
 ### READ
 
-![image](./assets/images/Captura de pantalla_2025-10-30_16-29-29.png)
+<img src="assets/images/Captura de pantalla_2025-10-30_16-29-29.png"/>
 
 ### UPDATE
 
-![image](./assets/images/Captura de pantalla_2025-10-30_16-31-03.png)
+<img src="assets/images/Captura de pantalla_2025-10-30_16-31-03.png"/>
 
 ### DELETE
 
-![image](./assets/images/Captura de pantalla_2025-10-30_16-31-52.png)
+<img src="assets/images/Captura de pantalla_2025-10-30_16-31-52.png"/>
