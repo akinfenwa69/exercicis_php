@@ -1,0 +1,119 @@
+@import 'tailwindcss';
+
+@font-face {
+    font-family: Inter;
+    src: url('../fonts/Inter.ttf');
+}
+
+:root {
+    --background: #222;
+    --foreground: #fff;
+
+
+    /* COLORS */
+    --dark-blue: #10223e;
+    --light-blue: #21c2f8;
+    --blue: #19729b;
+
+    /* COMPONENTS */
+    --nav-bg: #111;
+    --nav-item: #202020;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: Inter;
+}
+
+/* NAVIGATION BAR */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    height: 80px;
+    background-color: var(--nav-bg);
+    font-size: large;
+
+    div {
+        display: flex;
+        width: 50%;
+        height: 100%;
+        height: 100%;
+
+        img {
+            padding: 12px;
+        }
+
+        ul {
+            display: flex;
+            height: 100%;
+            align-items: center;
+
+            li,
+            a {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                transition: .3s;
+
+                a {
+                    padding: 20px;
+                    text-decoration: none;
+                    color: var(--foreground);
+                }
+
+                &:hover {
+                    background-color: var(--nav-item);
+                }
+            }
+        }
+    }
+}
+
+/* MAIN */
+main {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    display: table;
+    border-collapse: collapse;
+
+    tr,
+    th,
+    td {
+        padding: 8px;
+    }
+}
+
+/* OTHER */
+
+.btn {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: large;
+    background-color: var(--blue);
+    color: var(--foreground);
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+    text-decoration: none;
+
+    &:hover {
+        background-color: var(--light-blue);
+    }
+}
