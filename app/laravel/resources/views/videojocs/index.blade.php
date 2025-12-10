@@ -21,17 +21,17 @@
             </tr>
         </thead>
         <tbody>
-            @foreach ($videojocs as $l)
+            @foreach ($videojocs as $v)
                 <tr>
-                    <td>{{ $l->id }}</td>
-                    <td>{{ $l->nom }}</td>
-                    <td>{{ $l->plataforma }}</td>
-                    <td>{{ $l->any_estrena }}</td>
-                    <td>{{ ucfirst($l->estat) }}</td>
-                    <td>{{ number_format($l->preu, 2, ',', '.') }} €</td>
+                    <td>{{ $v->id }}</td>
+                    <td>{{ $v->nom }}</td>
+                    <td>{{ $v->plataforma }}</td>
+                    <td>{{ $v->any_estrena }}</td>
+                    <td>{{ ucfirst($v->estat) }}</td>
+                    <td>{{ number_format($v->preu, 2, ',', '.') }} €</td>
                     <td>
-                        <a class="btn" href="{{ route('videojocs.edit', $l) }}">Editar</a>
-                        <form action="{{ route('videojocs.destroy', $l) }}" method="POST" style="display:inline;">
+                        <a class="btn" href="{{ route('videojocs.edit', $v) }}">Editar</a>
+                        <form action="{{ route('videojocs.destroy', $v) }}" method="POST" style="display:inline;">
                             @csrf
                             @method('DELETE')
                             <button class="btn" type="submit"

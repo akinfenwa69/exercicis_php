@@ -1,34 +1,35 @@
 @csrf
 
-<label>Títol
-    <input type="text" name="titol" value="{{ old('titol', $llibre->titol ?? '') }}">
+<label>Nom
+    <input type="text" name="nom" value="{{ old('nom', $videojoc->nom ?? '') }}">
 </label>
-@error('titol')
+@error('nom')
     <div>{{ $message }}</div>
 @enderror
 <br>
 
-<label>Autor
-    <input type="text" name="autor" value="{{ old('autor', $llibre->autor ?? '') }}">
+<label>Plataforma
+    <input type="text" name="plataforma" value="{{ old('plataforma', $videojoc->plataforma ?? '') }}">
 </label>
-@error('autor')
+@error('plataforma')
     <div>{{ $message }}</div>
 @enderror
 <br>
 
-<label>Any edició
-    <input type="number" name="any_edicio" value="{{ old('any_edicio', $llibre->any_edicio ?? date('Y')) }}">
+<label>Any d'estrena
+    <input type="number" name="any_estrena" value="{{ old('any_estrena', $videojoc->any_estrena ?? date('Y')) }}">
 </label>
-@error('any_edicio')
+@error('any_estrena')
     <div>{{ $message }}</div>
 @enderror
 <br>
 
 <label>Estat
     <select name="estat">
-        @php $estat = old('estat', $llibre->estat ?? 'disponible'); @endphp
-        <option value="disponible" {{ $estat === 'disponible' ? 'selected' : '' }}>Disponible</option>
-        <option value="prestat" {{ $estat === 'prestat' ? 'selected' : '' }}>Prestat</option>
+        @php $estat = old('estat', $videojoc->estat ?? 'Jugant'); @endphp
+        <option value="Jugant" {{ $estat === 'Jugant' ? 'selected' : '' }}>Jugant</option>
+        <option value="Completat" {{ $estat === 'Completat' ? 'selected' : '' }}>Completat</option>
+        <option value="Pendent" {{ $estat === 'Pendent' ? 'selected' : '' }}>Pendent</option>
     </select>
 </label>
 @error('estat')
@@ -37,7 +38,7 @@
 <br>
 
 <label>Preu
-    <input type="number" step="0.01" name="preu" value="{{ old('preu', $llibre->preu ?? 0) }}">
+    <input type="number" step="0.01" name="preu" value="{{ old('preu', $videojoc->preu ?? 0) }}">
 </label>
 @error('preu')
     <div>{{ $message }}</div>
@@ -45,4 +46,4 @@
 <br><br>
 
 <button type="submit">Guardar</button>
-<a href="{{ route('llibres.index') }}">Tornar</a>
+<a href="{{ route('videojocs.index') }}">Tornar</a>

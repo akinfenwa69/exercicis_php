@@ -1,10 +1,10 @@
 @extends('layout')
 
-@section('title', 'Afegir llibre')
+@section('title', 'Afegir videojoc')
 
 @section('content')
-    <h1>Afegir llibre</h1>
-    <form method="POST" action="{{ route('llibres.store') }}">
-        @include('llibres._form')
+    <h1>Afegir videojoc</h1>
+    <form method="POST" action="{{ route('videojocs.store') }}">
+        @include('videojocs._form')
     </form>
 @endsection

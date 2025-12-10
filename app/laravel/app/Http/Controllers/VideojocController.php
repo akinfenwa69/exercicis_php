@@ -22,7 +22,6 @@ class VideojocController extends Controller
      */
     public function create()
     {
-        //
         return view('videojocs.create');
     }
 
@@ -32,10 +31,10 @@ class VideojocController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'nom'           => 'required|string|max:150|unique:videojoc,nom',
+            'nom'           => 'required|string|max:150|unique:videojocs,nom',
             'plataforma'    => 'required|string|max:100',
             'any_estrena'   => 'required|integer|min:1500|max:' . date('Y'),
-            'estat'         => 'required|in:disponible,prestat',
+            'estat'         => 'required|in:Jugant,Completat,Pendent',
             'preu'          => 'required|numeric|min:0',
         ]);
 
@@ -66,10 +65,10 @@ class VideojocController extends Controller
     public function update(Request $request, Videojoc $videojoc)
     {
         $validated = $request->validate([
-            'nom'           => 'required|string|max:150|unique:videojoc,nom,' . $videojoc->id,
+            'nom'           => 'required|string|max:150|unique:videojocs,nom,' . $videojoc->id,
             'plataforma'    => 'required|string|max:100',
             'any_estrena'   => 'required|integer|min:1500|max:' . date('Y'),
-            'estat'         => 'required|in:disponible,prestat',
+            'estat'         => 'required|in:Jugant,Completat,Pendent',
             'preu'          => 'required|numeric|min:0',
         ]);
 
